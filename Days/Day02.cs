@@ -12,7 +12,7 @@ namespace AdventOfCode.Days
 
         public Day02()
         {
-            _lstPasswords = new InputGetter().GetAllLinesString($"./Inputs/{GetType().Name}.txt").ToList();
+            _lstPasswords = InputGetter.GetAllLinesString($"./Inputs/{GetType().Name}.txt").ToList();
         }
 
         public string ExecutePartOne()

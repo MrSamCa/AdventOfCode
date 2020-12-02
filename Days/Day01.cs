@@ -11,7 +11,7 @@ namespace AdventOfCode.Days
 
         public Day01()
         {
-            _lstExpenses = new InputGetter().GetAllLinesInt($"./Inputs/{GetType().Name}.txt").ToList();
+            _lstExpenses = InputGetter.GetAllLinesInt($"./Inputs/{GetType().Name}.txt").ToList();
         }
         
         public string ExecutePartOne()

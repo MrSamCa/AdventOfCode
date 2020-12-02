@@ -1,5 +1,4 @@
-﻿using System;
-using AdventOfCode.Days;
+﻿using AdventOfCode.Common;
 
 namespace AdventOfCode
 {
@@ -7,11 +6,9 @@ namespace AdventOfCode
     {
         static void Main(string[] args)
         {
-            IDay dayToExecute = new Day03();
+            AdventOfCode adventOfCode = new AdventOfCode();
 
-            Console.WriteLine(dayToExecute.ExecutePartOne());
-            Console.WriteLine(dayToExecute.ExecutePartTwo());
-            Console.ReadKey();
+            adventOfCode.Execute();
         }
     }
 }
