@@ -20,7 +20,19 @@ namespace AdventOfCode.Common
 
             return lstInput;
         }
+        public static IEnumerable<char[]> GetAllLinesCharArray(string path)
+        {
+            StreamReader reader = new StreamReader(path);
+            string line;
+            List<char[]> lstInput = new List<char[]>();
 
+            while ((line = reader.ReadLine()) != null)
+            {
+                lstInput.Add(line.ToCharArray());
+            }
+
+            return lstInput;
+        }
 
         public static IEnumerable<int> GetAllLinesInt(string path)
         {
