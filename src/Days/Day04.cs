@@ -68,11 +68,7 @@ namespace AdventOfCode.Days
                             break;
                     }
                 }
-                switch (passport.)
-                {
-                    default:
-                        break;
-                }
+
                 if (!passport.ContainsKey("byr") ||
                     !passport.ContainsKey("iyr") ||
                     !passport.ContainsKey("eyr") ||
