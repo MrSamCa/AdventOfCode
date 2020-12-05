@@ -9,9 +9,9 @@ namespace AdventOfCode.Days
     {
         private readonly List<string> _lstPasswords;
 
-        public Day02()
+        public Day02(IInputGetter inputGetter)
         {
-            _lstPasswords = InputGetter.GetAllLinesString($"./Inputs/{GetType().Name}.txt").ToList();
+            _lstPasswords = inputGetter.GetAllLinesString($"./Inputs/{GetType().Name}.txt").ToList();
         }
 
         public string ExecutePartOne()

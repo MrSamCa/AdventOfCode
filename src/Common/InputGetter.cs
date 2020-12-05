@@ -5,9 +5,9 @@ using System.Text;
 
 namespace AdventOfCode.Common
 {
-    public static class InputGetter
+    public class InputGetter : IInputGetter
     {
-        public static IEnumerable<string> GetAllLinesString(string path)
+        public IEnumerable<string> GetAllLinesString(string path)
         {
             StreamReader reader = new StreamReader(path);
             string line;
@@ -20,7 +20,7 @@ namespace AdventOfCode.Common
 
             return lstInput;
         }
-        public static IEnumerable<char[]> GetAllLinesCharArray(string path)
+        public IEnumerable<char[]> GetAllLinesCharArray(string path)
         {
             StreamReader reader = new StreamReader(path);
             string line;
@@ -34,7 +34,7 @@ namespace AdventOfCode.Common
             return lstInput;
         }
 
-        public static IEnumerable<int> GetAllLinesInt(string path)
+        public IEnumerable<int> GetAllLinesInt(string path)
         {
             StreamReader reader = new StreamReader(path);
             string line;

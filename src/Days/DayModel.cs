@@ -6,13 +6,13 @@ using AdventOfCode.Common;
 
 namespace AdventOfCode.Days
 {
-    public class Day24 : IDay
+    public class DayModel : IDay
     {
         private readonly List<string> _lstInputs;
 
-        public Day24()
+        public DayModel(IInputGetter inputGetter)
         {
-            _lstInputs = InputGetter.GetAllLinesString($"./Inputs/{GetType().Name}.txt").ToList();
+            _lstInputs = inputGetter.GetAllLinesString($"./Inputs/{GetType().Name}.txt").ToList();
         }
 
         public string ExecutePartOne()

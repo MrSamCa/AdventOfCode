@@ -8,9 +8,9 @@ namespace AdventOfCode.Days
     {
         private readonly List<int> _lstExpenses;
 
-        public Day01()
+        public Day01(IInputGetter inputGetter)
         {
-            _lstExpenses = InputGetter.GetAllLinesInt($"./Inputs/{GetType().Name}.txt").ToList();
+            _lstExpenses = inputGetter.GetAllLinesInt($"./Inputs/{GetType().Name}.txt").ToList();
         }
         
         public string ExecutePartOne()

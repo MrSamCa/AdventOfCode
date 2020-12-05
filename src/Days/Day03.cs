@@ -10,9 +10,9 @@ namespace AdventOfCode.Days
     {
         private readonly List<char[]> _lstInputs;
 
-        public Day03()
+        public Day03(IInputGetter inputGetter)
         {
-            _lstInputs = InputGetter.GetAllLinesCharArray($"./Inputs/{GetType().Name}.txt").ToList();
+            _lstInputs = inputGetter.GetAllLinesCharArray($"./Inputs/{GetType().Name}.txt").ToList();
         }
 
         public string ExecutePartOne()
