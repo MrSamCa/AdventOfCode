@@ -8,7 +8,7 @@ namespace AdventOfCode
     {
         public void Execute()
         {
-            IDay dayToExecute = new Day06(new InputGetter());
+            IDay dayToExecute = new Day07(new InputGetter());
 
             Console.WriteLine(dayToExecute.ExecutePartOne());
             Console.WriteLine(dayToExecute.ExecutePartTwo());
